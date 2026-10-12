@@ -1,0 +1,9 @@
+# torch is provided by Kaggle / the Docker base image; install it yourself elsewhere (pip install torch)
+transformers>=4.45
+accelerate>=0.34
+bitsandbytes>=0.43
+sentencepiece
+soundfile
+numpy
+gradio>=5,<6
+pytest

@@ -1,0 +1,20 @@
+[
+  {"name": "proposal_only",
+   "transcript": "I think we should maybe move the nightly job to a different server. What does everyone think? Hmm, I'm not sure it's worth the effort. Let's revisit this at the next sync.",
+   "decisions": [], "actions": []},
+  {"name": "clear_decision_and_task",
+   "transcript": "We looked at the three vendor quotes. After comparing the costs, the team agreed to go with Vendor B. Priya, please send the signed order form to Vendor B by Wednesday. Sure, I'll send it before Wednesday ends.",
+   "decisions": ["The team agreed to go with Vendor B."],
+   "actions": [{"task": "Send the signed order form to Vendor B", "owner": "Priya", "deadline": "Wednesday"}]},
+  {"name": "negated_decision_and_unassigned_task",
+   "transcript": "We discussed using Kubernetes for the deployment. We decided not to use Kubernetes this quarter because the team is too small. Someone needs to update the deployment docs but nobody has been assigned yet.",
+   "decisions": ["The team decided not to use Kubernetes this quarter."], "actions": []},
+  {"name": "owner_without_deadline_and_deadline_without_owner",
+   "transcript": "Rahul will prepare the test report. The release notes have to be finished by October 20th. We agreed that the release candidate goes out after both are done.",
+   "decisions": ["The release candidate goes out after the test report and release notes are done."],
+   "actions": [{"task": "Prepare the test report", "owner": "Rahul", "deadline": "Unspecified"},
+               {"task": "Finish the release notes", "owner": "Unspecified", "deadline": "October 20th"}]},
+  {"name": "unresolved_disagreement",
+   "transcript": "Anil wants to use the older library because it is stable. Meera thinks the new library is faster and should be used. They could not agree and will bring it to the architecture review.",
+   "decisions": [], "actions": []}
+]
